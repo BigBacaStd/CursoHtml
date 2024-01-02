@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+
+    <h1>Validación de datos</h1>
+
+    <form>
+        <input type="text" required
+        minlength="5"
+        maxlength="15"
+        />
+
+        <input type="number" required
+        max="22" min="5"
+        />
+        <input type="submit" value="enviar" />
+    </form>
+
+
+    <h1>Formularios</h1>
+
+    <form>
+        <fieldset>
+            <legend>Informacion Personal</legend>
+            <div>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre" />
+            </div>
+
+            <div>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion"></textarea>
+            </div>
+
+            <div>
+                Email:
+                <input type="email" />
+            </div>
+
+            <div>
+                Contraseña:
+                <input type="password" />
+            </div>
+
+            <div>
+                Sexo
+                <input type="radio" name="genero" id="hombre" value="hombre" />
+                <label for="hombre">Hombre</label>
+
+                <input type="radio" name="genero" id="mujer" value="mujer" />
+                <label for="mujer">Mujer</label>
+            </div>
+
+            <div>
+                Select:
+                <select>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                Checkbox
+                <label>
+                    <input type="checkbox" /> Mayor de edad
+                </label>
+
+                <label>
+                    <input type="checkbox" /> Menor de edad
+                </label>
+            </div>
+
+            <div>
+                Color
+
+                <input type="color" />
+            </div>
+
+            <div>
+                Fecha
+                <input type="date" />
+            </div>
+
+            <div>
+                Barra de progreso
+                <progress max="100" value="45"></progress>
+            </div>
+
+            <div>
+                Barra meter
+                <meter max="100" value="45"></meter>
+            </div>
+
+            <div>
+                Lista de datos:
+                <input list="frutas" name="fruta" />
+                <datalist id="frutas">
+                    <option value="manzana" />
+                    <option value="pera" />
+                    <option value="aguacate" />
+                    <option value="uva" />
+                    <option value="naranja" />
+                </datalist>
+            </div>
+
+
+
+        </fieldset>
+
+
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
